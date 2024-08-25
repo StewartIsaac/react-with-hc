@@ -6,6 +6,7 @@ const useCounterStore = create((set) => ({
     ...initialState,
     increment: () => set((state) => ({ count: state.count + 1 })),
     decrement: () => set((state) => ({ count: state.count - 1 })),
+    resetCount: () => set((state) => ({ count: state.count = 0 })),
 }));
 
 export default useCounterStore;
